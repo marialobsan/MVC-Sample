@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class IphoneVC: UIViewController {
 
     @IBOutlet weak var iphoneNameLbl: UILabel!
     @IBOutlet weak var iphoneColorLbl: UILabel!

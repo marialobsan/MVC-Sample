@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gse-ja-YHu">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,58 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First PageVC-->
+        <scene sceneID="Rir-um-Z2L">
+            <objects>
+                <viewController id="gse-ja-YHu" customClass="FirstPageVC" customModule="MVC_Proj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="chR-ZV-6NK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="RL6-Yk-Xkc">
+                                <rect key="frame" x="73" y="422.5" width="268" height="51"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7I-56-vtt" customClass="MyButton" customModule="MVC_Proj" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="51"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                        <state key="normal" title="Iphone">
+                                            <color key="titleColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54o-DC-Jsm" customClass="MyButton" customModule="MVC_Proj" customModuleProvider="target">
+                                        <rect key="frame" x="149" y="0.0" width="119" height="51"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                        <state key="normal" title="Samsung">
+                                            <color key="titleColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click your preferred brand of cellphone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZV-Cc-Fem" customClass="MyCustomLbl" customModule="MVC_Proj" customModuleProvider="target">
+                                <rect key="frame" x="57.5" y="94" width="299.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RL6-Yk-Xkc" firstAttribute="centerY" secondItem="chR-ZV-6NK" secondAttribute="centerY" id="3c2-9S-jyb"/>
+                            <constraint firstItem="RL6-Yk-Xkc" firstAttribute="centerX" secondItem="chR-ZV-6NK" secondAttribute="centerX" id="66g-Jy-fgA"/>
+                            <constraint firstItem="fZV-Cc-Fem" firstAttribute="top" secondItem="6Ty-p7-QIG" secondAttribute="top" constant="50" id="Pge-nL-s9D"/>
+                            <constraint firstItem="fZV-Cc-Fem" firstAttribute="centerX" secondItem="chR-ZV-6NK" secondAttribute="centerX" id="nLG-fj-JLF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Ty-p7-QIG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hi6-yF-oYf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-288" y="-28"/>
+        </scene>
+        <!--IphoneVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVC_Proj" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IphoneVC" customModule="MVC_Proj" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,6 +131,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="384" y="-28"/>
+        </scene>
+        <!--SamsungVC-->
+        <scene sceneID="L9s-HF-CNN">
+            <objects>
+                <viewController id="mRw-Gk-McM" customClass="SamsungVC" customModule="MVC_Proj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vr8-RJ-77y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="49n-yc-Z4I" customClass="CustomPrettyView" customModule="MVC_Proj" customModuleProvider="target">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Hm3-RP-sOg"/>
+                                    <constraint firstAttribute="height" constant="300" id="oss-x5-mfP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="49n-yc-Z4I" firstAttribute="centerY" secondItem="Vr8-RJ-77y" secondAttribute="centerY" id="OVu-ru-MlI"/>
+                            <constraint firstItem="49n-yc-Z4I" firstAttribute="centerX" secondItem="Vr8-RJ-77y" secondAttribute="centerX" id="hz3-8g-dvJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8nk-wG-cdW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P1m-zg-1Ef" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="-30"/>
         </scene>
     </scenes>
 </document>

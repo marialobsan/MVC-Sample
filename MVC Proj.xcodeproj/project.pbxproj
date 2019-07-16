@@ -8,24 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		8D35781A22DC7B4A000EF3FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35781922DC7B4A000EF3FD /* AppDelegate.swift */; };
-		8D35781C22DC7B4A000EF3FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35781B22DC7B4A000EF3FD /* ViewController.swift */; };
+		8D35781C22DC7B4A000EF3FD /* IphoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35781B22DC7B4A000EF3FD /* IphoneVC.swift */; };
 		8D35781F22DC7B4A000EF3FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D35781D22DC7B4A000EF3FD /* Main.storyboard */; };
 		8D35782122DC7B4B000EF3FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D35782022DC7B4B000EF3FD /* Assets.xcassets */; };
 		8D35782422DC7B4B000EF3FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D35782222DC7B4B000EF3FD /* LaunchScreen.storyboard */; };
 		8D35782F22DC9C94000EF3FD /* AppleProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35782E22DC9C94000EF3FD /* AppleProduct.swift */; };
 		8D35783122DC9CE5000EF3FD /* CustomPrettyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D35783022DC9CE5000EF3FD /* CustomPrettyView.swift */; };
+		8DFC072A22DE056A006AB721 /* SamsungProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC072922DE056A006AB721 /* SamsungProduct.swift */; };
+		8DFC072C22DE08FB006AB721 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC072B22DE08FB006AB721 /* MyButton.swift */; };
+		8DFC072E22DE0B74006AB721 /* MyCustomLbl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC072D22DE0B74006AB721 /* MyCustomLbl.swift */; };
+		8DFC073022DE1410006AB721 /* FirstPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC072F22DE1410006AB721 /* FirstPageVC.swift */; };
+		8DFC073222DE148D006AB721 /* SamsungVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFC073122DE148D006AB721 /* SamsungVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D35781622DC7B4A000EF3FD /* MVC Proj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC Proj.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D35781922DC7B4A000EF3FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8D35781B22DC7B4A000EF3FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D35781B22DC7B4A000EF3FD /* IphoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneVC.swift; sourceTree = "<group>"; };
 		8D35781E22DC7B4A000EF3FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D35782022DC7B4B000EF3FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D35782322DC7B4B000EF3FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D35782522DC7B4B000EF3FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D35782E22DC9C94000EF3FD /* AppleProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleProduct.swift; sourceTree = "<group>"; };
 		8D35783022DC9CE5000EF3FD /* CustomPrettyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPrettyView.swift; sourceTree = "<group>"; };
+		8DFC072922DE056A006AB721 /* SamsungProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamsungProduct.swift; sourceTree = "<group>"; };
+		8DFC072B22DE08FB006AB721 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		8DFC072D22DE0B74006AB721 /* MyCustomLbl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomLbl.swift; sourceTree = "<group>"; };
+		8DFC072F22DE1410006AB721 /* FirstPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageVC.swift; sourceTree = "<group>"; };
+		8DFC073122DE148D006AB721 /* SamsungVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamsungVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +83,9 @@
 		8D35782B22DC8B96000EF3FD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8D35781B22DC7B4A000EF3FD /* ViewController.swift */,
+				8D35781B22DC7B4A000EF3FD /* IphoneVC.swift */,
+				8DFC072F22DE1410006AB721 /* FirstPageVC.swift */,
+				8DFC073122DE148D006AB721 /* SamsungVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -82,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				8D35783022DC9CE5000EF3FD /* CustomPrettyView.swift */,
+				8DFC072B22DE08FB006AB721 /* MyButton.swift */,
+				8DFC072D22DE0B74006AB721 /* MyCustomLbl.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -90,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				8D35782E22DC9C94000EF3FD /* AppleProduct.swift */,
+				8DFC072922DE056A006AB721 /* SamsungProduct.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,10 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DFC072A22DE056A006AB721 /* SamsungProduct.swift in Sources */,
 				8D35782F22DC9C94000EF3FD /* AppleProduct.swift in Sources */,
-				8D35781C22DC7B4A000EF3FD /* ViewController.swift in Sources */,
+				8DFC073022DE1410006AB721 /* FirstPageVC.swift in Sources */,
+				8D35781C22DC7B4A000EF3FD /* IphoneVC.swift in Sources */,
+				8DFC072E22DE0B74006AB721 /* MyCustomLbl.swift in Sources */,
 				8D35781A22DC7B4A000EF3FD /* AppDelegate.swift in Sources */,
+				8DFC073222DE148D006AB721 /* SamsungVC.swift in Sources */,
 				8D35783122DC9CE5000EF3FD /* CustomPrettyView.swift in Sources */,
+				8DFC072C22DE08FB006AB721 /* MyButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
